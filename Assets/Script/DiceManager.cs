@@ -9,4 +9,5 @@ public class DiceManager : Singleton<DiceManager>
 
     public List<int> posIndex = new List<int>();
 
+
 }
