@@ -2,16 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Dice : MonoBehaviour
+[System.Serializable]
+public struct Stat
 {
-
-    void Start()
+    public float Hp
     {
-        
+        get { return hp; }
     }
 
-    void Update()
-    {
-        
-    }
+
+
+
+
+
+    [SerializeField] private float hp;
+}
+public class Dice
+{
+    
 }
