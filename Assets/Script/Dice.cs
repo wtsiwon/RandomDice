@@ -26,8 +26,6 @@ public struct Stat
 
 
 
-
-
     [SerializeField] private float hp;
     [SerializeField] private float dmg;
 
