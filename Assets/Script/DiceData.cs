@@ -23,11 +23,21 @@ public struct ProportionInfo
     [Header("최대 체력 비례")]
     public bool maxHp;
 }
+public enum EDiceType
+{
+    Fire,
+    Electro,
+    Ice,
+    Wind,
+    Rand,
+}
+
 [CreateAssetMenu(fileName = "DiceData", menuName = "Datas/DiceData", order = 0)]
 public class DiceData : ScriptableObject
 {
     public Stat stat;
     public AttackTypeInfo atkTypeInfo;
+    public EDiceType diceType;
     public int count;
     public bool isDraging;
 }

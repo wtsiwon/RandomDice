@@ -1,19 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System;
 
-public class GameManager : Singleton<GameManager>
+public class SoundManager : MonoBehaviour
 {
-    public float bossTime;
-
-    public Action SpawnBoss;
+    private List<AudioClip> BGM = new List<AudioClip>();
 
     private void Start()
     {
         
     }
-
-
-
 }

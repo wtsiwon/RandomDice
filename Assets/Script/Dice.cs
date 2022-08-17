@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-[System.Serializable]
+
+[Serializable]
 public struct Stat
 {
     public Action OnDie;
@@ -37,7 +38,8 @@ public struct Stat
     [SerializeField] private float ats;
 
 }
-public class Dice
+
+public class Dice : MonoBehaviour
 {
     public List<GameObject> eyes = new List<GameObject>();
 
