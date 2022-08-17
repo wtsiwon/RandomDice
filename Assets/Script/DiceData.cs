@@ -29,4 +29,5 @@ public class DiceData : ScriptableObject
     public Stat stat;
     public AttackTypeInfo atkTypeInfo;
     public int count;
+    public bool isDraging;
 }

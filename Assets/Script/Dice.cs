@@ -14,7 +14,7 @@ public struct Stat
                 hp = value;
             else if (MaxHp < value)
                 hp = MaxHp;
-            
+
         }
     }
     public float MaxHp;
@@ -22,7 +22,7 @@ public struct Stat
     {
         get { return dmg; }
     }
-    
+
 
 
 
@@ -32,5 +32,5 @@ public struct Stat
 }
 public class Dice
 {
-    
+    public List<GameObject> eyes = new List<GameObject>();
 }
