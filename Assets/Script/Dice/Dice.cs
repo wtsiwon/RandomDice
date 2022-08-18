@@ -24,35 +24,69 @@ public struct Stat
         }
     }
     public float MaxHp;
-    public float Dmg
+    public float AD
     {
-        get { return dmg; }
+        get { return ad; }
     }
 
+    public float Ats
+    {
+        get { return ats; }
+        set
+        {
+            Ats = value;
+        }
+    }
 
 
     [Header("Stat")]
     [SerializeField] private float hp;
     [Tooltip("Damage")]
-    [SerializeField] private float dmg;
+    [SerializeField] private float ad;
     [Tooltip("Attack Speed")]
     [SerializeField] private float ats;
 
+    public void Assign(Stat stat)
+    {
+        
+    }
+    public static Stat operator +(Stat op1, Stat op2)
+    {
+        return new Stat
+        {
+            ad = op1.AD + op2.AD,
+            hp = op1.Hp + op2.Hp,
+        };
+    }
 
 }
+
+
 public class Dice : MonoBehaviour
 {
     public List<GameObject> eyes = new List<GameObject>();
 
     [SerializeField] private DiceData diceData;
 
-    
+    public Transform pos;
 
+    public int eyeCount;
+    public bool isDraging;
+
+    public float Ats
+    {
+        get { return Ats; }
+    }
     public DiceData DiceData
     {
         get
         {
             return diceData;
+        }
+
+        set
+        {
+
         }
     }
 
@@ -60,5 +94,12 @@ public class Dice : MonoBehaviour
     {
 
     }
-    
+    /// <summary>
+    /// АјАн
+    /// </summary>
+    /// <returns></returns>
+    IEnumerator EAttack()
+    {
+        yield return null;
+    }
 }

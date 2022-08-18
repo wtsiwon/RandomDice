@@ -36,8 +36,8 @@ public enum EDiceType
 public class DiceData : ScriptableObject
 {
     public Stat stat;
+    public Stat buffStat;
     public AttackTypeInfo atkTypeInfo;
     public EDiceType diceType;
-    public int eyeCount;
-    public bool isDraging;
+    
 }
