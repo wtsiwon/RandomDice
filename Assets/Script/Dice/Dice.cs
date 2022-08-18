@@ -45,6 +45,9 @@ public class Dice : MonoBehaviour
     public List<GameObject> eyes = new List<GameObject>();
 
     [SerializeField] private DiceData diceData;
+
+    
+
     public DiceData DiceData
     {
         get

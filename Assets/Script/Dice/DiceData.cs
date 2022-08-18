@@ -38,6 +38,6 @@ public class DiceData : ScriptableObject
     public Stat stat;
     public AttackTypeInfo atkTypeInfo;
     public EDiceType diceType;
-    public int count;
+    public int eyeCount;
     public bool isDraging;
 }
