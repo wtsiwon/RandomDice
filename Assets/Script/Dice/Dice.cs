@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.EventSystems;
 
 
 [Serializable]
@@ -37,25 +38,24 @@ public struct Stat
     [Tooltip("Attack Speed")]
     [SerializeField] private float ats;
 
-}
 
+}
 public class Dice : MonoBehaviour
 {
     public List<GameObject> eyes = new List<GameObject>();
 
-    public DiceData diceData;
+    [SerializeField] private DiceData diceData;
+    public DiceData DiceData
+    {
+        get
+        {
+            return diceData;
+        }
+    }
 
     private void Start()
     {
 
     }
-    public Dice Combine(Dice firstDice, Dice secondDice)
-    {
-        if(firstDice.diceData.count == secondDice.diceData.count)
-        {
-            Dice dice = null;
-            
-        }
-        return null;
-    }
+    
 }
