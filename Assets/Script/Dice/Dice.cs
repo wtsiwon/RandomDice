@@ -81,6 +81,7 @@ public class Dice : MonoBehaviour
     public float Ats
     {
         get { return Ats; }
+        
     }
     public DiceData DiceData
     {
@@ -108,7 +109,10 @@ public class Dice : MonoBehaviour
     private void Ray()
     {
         Debug.DrawRay(new Vector3(0, 0, RAYSTARTPOS), dir, new Color(1, 0, 0));
-        
+        if (ray.collider.CompareTag("Dice"))
+        {
+
+        }
     }
     /// <summary>
     /// АјАн

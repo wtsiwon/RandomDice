@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class DiceManager : Singleton<DiceManager>
 {
+    public Dice[,] grid = new Dice[5, 3];
+
     public List<DiceData> deck = new List<DiceData>();
 
     public List<Transform> dicePos = new List<Transform>();
