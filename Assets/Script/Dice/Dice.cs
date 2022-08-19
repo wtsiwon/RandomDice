@@ -69,6 +69,8 @@ public class Dice : MonoBehaviour
 
     [SerializeField] private DiceData diceData;
 
+    private DiceCombine diceCombine;
+
     public Transform pos;
     public RaycastHit2D ray;
     private const float RAYSTARTPOS = -1f;
@@ -81,23 +83,25 @@ public class Dice : MonoBehaviour
     public float Ats
     {
         get { return Ats; }
-        
     }
     public DiceData DiceData
     {
-        get
-        {
-            return diceData;
-        }
+        get{ return diceData; }
         set
         {
-
+            if (value)
+            {
+                if(diceData != null)
+                {
+                    value.
+                }
+            }
         }
     }
 
     private void Start()
     {
-
+        diceCombine = GetComponent<DiceCombine>();
     }
 
     private void Update()
