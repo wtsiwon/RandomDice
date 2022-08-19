@@ -15,8 +15,8 @@ MonoBehaviour:
   stat:
     MaxHp: 0
     hp: 0
-    ad: 0
-    ats: 0
+    ad: 30
+    ats: 1
   buffStat:
     MaxHp: 0
     hp: 0
