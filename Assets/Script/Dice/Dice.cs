@@ -56,6 +56,7 @@ public struct Stat
         {
             ad = op1.AD + op2.AD,
             hp = op1.Hp + op2.Hp,
+            ats = op1.Ats + op2.Ats
         };
     }
 
@@ -69,6 +70,10 @@ public class Dice : MonoBehaviour
     [SerializeField] private DiceData diceData;
 
     public Transform pos;
+    public RaycastHit2D ray;
+    private const float RAYSTARTPOS = -1f;
+
+    private Vector3 dir = new Vector3(0, 0, 1f);
 
     public int eyeCount;
     public bool isDraging;
@@ -83,7 +88,6 @@ public class Dice : MonoBehaviour
         {
             return diceData;
         }
-
         set
         {
 
@@ -94,12 +98,26 @@ public class Dice : MonoBehaviour
     {
 
     }
+
+    private void Update()
+    {
+        ray = GetComponent<RaycastHit2D>();
+        
+    }
+
+    private void Ray()
+    {
+        Debug.DrawRay(new Vector3(0, 0, RAYSTARTPOS), dir, new Color(1, 0, 0));
+        
+    }
     /// <summary>
     /// АјАн
     /// </summary>
     /// <returns></returns>
     IEnumerator EAttack()
     {
+        
+
         yield return null;
     }
 }

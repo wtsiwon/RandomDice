@@ -11,24 +11,19 @@ public class DiceCombine : MonoBehaviour,IPointerDownHandler,IPointerUpHandler,I
     {
 
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void Update()
     {
         
     }
-   
-
     public void OnPointerDown(PointerEventData eventData)
     {
-        throw new System.NotImplementedException();
     }
 
     public void OnPointerUp(PointerEventData eventData)
     {
-        throw new System.NotImplementedException();
     }
 
     public void OnDrag(PointerEventData eventData)
     {
-        throw new System.NotImplementedException();
     }
 }
