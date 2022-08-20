@@ -93,7 +93,6 @@ public class Dice : MonoBehaviour
             {
                 if(diceData != null)
                 {
-                    value.
                 }
             }
         }
