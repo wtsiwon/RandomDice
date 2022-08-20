@@ -6,10 +6,11 @@ using Random = UnityEngine.Random;
 
 public class DiceCombine : MonoBehaviour,IPointerDownHandler,IPointerUpHandler,IDragHandler
 {
+    private Dice Dice;
 
     private void Start()
     {
-
+        Dice = GetComponent<Dice>();
     }
     private void Update()
     {
