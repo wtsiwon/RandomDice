@@ -7,9 +7,11 @@ public class DiceManager : Singleton<DiceManager>
 {
     public List<DiceData> deck = new List<DiceData>();
 
-    public List<List<Transform>> dicePos = new List<List<Transform>>();
+    public List<Transform> dicePos = new List<Transform>();
 
     public List<int> diceUpGradeCost = new List<int>();
+
+    private Color falseActiveColor = new Color();
     //현재 드래그 중인 주사위
     public Dice currentCollidDice;
 
@@ -33,15 +35,14 @@ public class DiceManager : Singleton<DiceManager>
     {
         if (dice1 == null || dice2 == null) return null;
 
-        Dice dice = null;
         if (dice1.eyeCount == dice2.eyeCount
             && dice1.DiceData.diceType == dice2.DiceData.diceType)
         {
-            RandDiceType();
-
+            
         }
-        return dice;
+        return dice2;
     }
+
     /// <summary>
     /// 다이스 종류 뽑아줌
     /// </summary>
@@ -58,16 +59,27 @@ public class DiceManager : Singleton<DiceManager>
     /// 주사위를 소환해주는 함수
     /// </summary>
     /// <param name="parent"></param>
-    public void SpawnDice()
+    public Dice SpawnDice()
     {
         Dice dice = null;
         int randDice = Random.Range(0, deck.Count);
         dice.DiceData = deck[randDice];
-        Instantiate(dice);
+        return Instantiate(dice);
     }
-
-    public void SelectDicePos()
+    /// <summary>
+    /// 뭔가 잘못된ㅠㅠ
+    /// 생각해보니 컨테이너는 EmptyObject다
+    /// </summary>
+    /// <returns></returns>
+    public List<Transform> SelectDicePos()
     {
-        
+        foreach(Transform pos in dicePos)
+        {
+            if(pos.GetComponent<Container>().canCombine == false)
+            {
+
+            }
+        }
+        return dicePos;
     }
 }
