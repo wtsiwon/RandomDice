@@ -126,7 +126,7 @@ public class Dice : MonoBehaviour
     /// АјАн
     /// </summary>
     /// <returns></returns>
-    IEnumerator EAttack()
+    private IEnumerator EAttack()
     {
         
 

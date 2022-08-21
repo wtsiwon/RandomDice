@@ -37,7 +37,6 @@ public class DiceManager : Singleton<DiceManager>
         if (dice1.eyeCount == dice2.eyeCount
             && dice1.DiceData.diceType == dice2.DiceData.diceType)
         {
-
             RandDiceType();
 
         }

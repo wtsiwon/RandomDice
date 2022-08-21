@@ -37,7 +37,7 @@ public class DiceCombine : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         {
             if (Dice.isDice == true)
             {
-                DiceManager.Instance.Combine(Dice, DiceManager.Instance.currentCollidDice);
+                Instantiate(DiceManager.Instance.Combine(Dice, DiceManager.Instance.currentCollidDice));
             }
         }
     }
