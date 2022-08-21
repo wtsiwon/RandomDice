@@ -9,7 +9,7 @@ using UnityEngine.EventSystems;
 public struct Stat
 {
     public Action OnDie;
-    public float Hp
+    public float HP
     {
         get { return hp; }
         set
@@ -48,14 +48,16 @@ public struct Stat
 
     public void Assign(Stat stat)
     {
-        
+        hp = stat.HP;
+        ad = stat.AD;
+        ats = stat.Ats;
     }
     public static Stat operator +(Stat op1, Stat op2)
     {
         return new Stat
         {
             ad = op1.AD + op2.AD,
-            hp = op1.Hp + op2.Hp,
+            hp = op1.HP + op2.HP,
             ats = op1.Ats + op2.Ats
         };
     }
@@ -67,34 +69,34 @@ public class Dice : MonoBehaviour
 {
     public List<GameObject> eyes = new List<GameObject>();
 
-    [SerializeField] private DiceData diceData;
+    [SerializeField] 
+    private DiceData diceData;
 
     private DiceCombine diceCombine;
-
-    public Transform pos;
-    public RaycastHit2D ray;
-    private const float RAYSTARTPOS = -1f;
-
+    private const float RAYDISTANCE = 10f;
     private Vector3 dir = new Vector3(0, 0, 1f);
+    private Vector3 rayOriginPos = new Vector3(0, 0, -1f);
+    public Transform pos;
 
-    public int eyeCount;
-    public bool isDraging;
+
+    public int eyeCount = 1;
+    //드래그 중인가?
+    public bool isDragging;
+    //주사위 하고 부딪혔냐
+    public bool isDice;
 
     public float Ats
     {
         get { return Ats; }
+        set { Ats = value; }
     }
+
     public DiceData DiceData
     {
-        get{ return diceData; }
+        get => diceData;
         set
         {
-            if (value)
-            {
-                if(diceData != null)
-                {
-                }
-            }
+            diceData = value;
         }
     }
 
@@ -105,16 +107,19 @@ public class Dice : MonoBehaviour
 
     private void Update()
     {
-        ray = GetComponent<RaycastHit2D>();
-        
+        RayCasts();
     }
 
-    private void Ray()
+    private void RayCasts()
     {
-        Debug.DrawRay(new Vector3(0, 0, RAYSTARTPOS), dir, new Color(1, 0, 0));
-        if (ray.collider.CompareTag("Dice"))
+        Debug.DrawRay(rayOriginPos, dir, new Color(1, 0, 0));
+        RaycastHit ray;
+        if(Physics.Raycast(rayOriginPos,dir,out ray,RAYDISTANCE))
         {
-
+            if (ray.collider.CompareTag("Dice"))
+            {
+                isDice = true;
+            }
         }
     }
     /// <summary>

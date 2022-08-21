@@ -16,6 +16,8 @@ public class GameManager : Singleton<GameManager>
 
     public float currentTime;
 
+    public int money;
+
     public bool isBoss
     {
         get
@@ -34,7 +36,10 @@ public class GameManager : Singleton<GameManager>
 
     public Action SpawnBoss;
 
-
+    private void Awake()
+    {
+        SetGame();
+    }
     private void Update()
     {
         currentTime += Time.deltaTime;
@@ -43,6 +48,12 @@ public class GameManager : Singleton<GameManager>
         {
             isBoss = true;
         }
+    }
+
+    private void SetGame()
+    {
+        money = 100;
+
     }
     private void EnemyListSort()
     {
@@ -56,4 +67,6 @@ public class GameManager : Singleton<GameManager>
     {
 
     }
+
+
 }
