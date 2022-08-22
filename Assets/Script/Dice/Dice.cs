@@ -128,8 +128,11 @@ public class Dice : MonoBehaviour
     /// <returns></returns>
     private IEnumerator EAttack()
     {
-        
 
+        while (true)
+        {
+
+        }
         yield return null;
     }
 }
