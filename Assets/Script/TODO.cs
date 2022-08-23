@@ -6,12 +6,7 @@ public static class TODO
 {
     public static void Hotfix()
     {
-        // Dice.cs 88 line
-        var go = SpawnGO("Stackover flow");
-        Dice dice = go.AddComponent<Dice>();
-        Debug.Log(dice.Ats); // stackover flow
-
-        // DiceManager.cs 65 line
+        //DiceManager.cs 65 line
         //Dice dice = null;                             dice is null
         //int randDice = Random.Range(0, deck.Count);   dice is null
         //dice.DiceData = deck[randDice];               dice is null, dice(null).DiceData <- ?

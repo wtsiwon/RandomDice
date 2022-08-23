@@ -12,17 +12,27 @@ public class DiceManager : Singleton<DiceManager>
     public List<int> diceUpGradeCost = new List<int>();
 
     private Color falseActiveColor = new Color();
-    //현재 드래그 중인 주사위
+
     public Dice currentCollidDice;
+
+    //현재 들고 있는 다이스
+    public Dice draggingDice;
+
+    public Dice dice;
+
+    public bool IsDraggingDice
+    {
+        get { return draggingDice != null; }
+    }
 
     public Button diceSpawnBtn;
 
     private void Start()
     {
-        diceSpawnBtn.onClick.AddListener(() =>
-        {
-            SpawnDice();
-        });
+        //diceSpawnBtn.onClick.AddListener(() =>
+        //{
+        //    SpawnDice();
+        //});
     }
 
     /// <summary>
@@ -35,7 +45,7 @@ public class DiceManager : Singleton<DiceManager>
     {
         if (dice1 == null || dice2 == null) return null;
 
-        if (dice1.eyeCount == dice2.eyeCount
+        if (dice1.EyeCount == dice2.EyeCount
             && dice1.DiceData.diceType == dice2.DiceData.diceType)
         {
             
@@ -61,21 +71,20 @@ public class DiceManager : Singleton<DiceManager>
     /// <param name="parent"></param>
     public Dice SpawnDice()
     {
-        Dice dice = null;
+        Dice dice = Instantiate(this.dice); 
         int randDice = Random.Range(0, deck.Count);
         dice.DiceData = deck[randDice];
-        return Instantiate(dice);
+        return dice;
     }
     /// <summary>
-    /// 뭔가 잘못된ㅠㅠ
-    /// 생각해보니 컨테이너는 EmptyObject다
+    /// 합칠수 있는 주사위만 보여주기
     /// </summary>
     /// <returns></returns>
     public List<Transform> SelectDicePos()
     {
         foreach(Transform pos in dicePos)
         {
-            if(pos.GetComponent<Container>().canCombine == false)
+            if(pos.GetComponent<Container>().CanCombine == false)
             {
 
             }

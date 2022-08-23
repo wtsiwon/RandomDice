@@ -9,6 +9,7 @@ public class DiceCombine : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     private Dice Dice;
     private RectTransform rtf;
 
+
     //현재 누르고 있는지
     public int mouseCondition;
 
@@ -28,16 +29,20 @@ public class DiceCombine : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 
     public void OnDrag(PointerEventData eventData)
     {
-        rtf.position = eventData.position;
+        rtf.anchoredPosition += eventData.delta;
     }
 
     public void OnPointerUp(PointerEventData eventData)
     {
-        if (Dice.isDragging == true)
+        if (DiceManager.Instance.currentCollidDice)
         {
             if (Dice.isDice == true)
             {
                 Instantiate(DiceManager.Instance.Combine(Dice, DiceManager.Instance.currentCollidDice));
+            }
+            else
+            {
+                Dice.transform.position = Dice.pos.position;
             }
         }
     }

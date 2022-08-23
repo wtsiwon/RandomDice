@@ -67,6 +67,7 @@ public struct Stat
 
 public class Dice : MonoBehaviour
 {
+
     public List<GameObject> eyes = new List<GameObject>();
 
     [SerializeField] 
@@ -76,18 +77,30 @@ public class Dice : MonoBehaviour
     private const float RAYDISTANCE = 10f;
     private Vector3 dir = new Vector3(0, 0, 1f);
     private Vector3 rayOriginPos = new Vector3(0, 0, -1f);
+
+    //private const int MAXEYECOUNT = 7;
+
     public Transform pos;
 
-
-    public int eyeCount = 1;
+    private int eyeCount = 1;
     //드래그 중인가?
     public bool isDragging;
     //주사위 하고 부딪혔냐
     public bool isDice;
 
+    public int EyeCount
+    {
+        get { return eyeCount; }
+        set
+        {
+            eyes[eyeCount - 1].SetActive(false);
+            eyeCount = value;
+            eyes[eyeCount - 1].SetActive(true);
+        }
+    }
     public float Ats
     {
-        get { return Ats; }
+        get { return diceData.stat.Ats; }
         set { Ats = value; }
     }
 
@@ -107,6 +120,7 @@ public class Dice : MonoBehaviour
 
     private void Update()
     {
+        
         RayCasts();
     }
 
@@ -128,11 +142,15 @@ public class Dice : MonoBehaviour
     /// <returns></returns>
     private IEnumerator EAttack()
     {
-
         while (true)
         {
-
+            
         }
-        yield return null;
+        yield return StartCoroutine(EAttack());
+    }
+
+    private void Attack()
+    {
+
     }
 }
