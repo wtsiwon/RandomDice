@@ -73,13 +73,25 @@ public class Dice : MonoBehaviour
     [SerializeField] 
     private DiceData diceData;
 
-    private DiceCombine diceCombine;
+    private DiceActivity diceActivity;
     
     //private const int MAXEYECOUNT = 7;
 
     public Transform pos;
 
     private int eyeCount = 1;
+
+    private bool isdragging;
+    //드래그 중인가?
+    public bool isDragging
+    {
+        get => isdragging;
+
+        set
+        {
+            isdragging = value;
+        }
+    }
 
     public int EyeCount
     {
@@ -122,7 +134,7 @@ public class Dice : MonoBehaviour
 
     private void Start()
     {
-        diceCombine = GetComponent<DiceCombine>();
+        diceActivity = GetComponent<DiceActivity>();
     }
 
     private void Update()

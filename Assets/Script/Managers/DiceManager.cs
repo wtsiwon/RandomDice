@@ -48,7 +48,7 @@ public class DiceManager : Singleton<DiceManager>
         if (dice1.EyeCount == dice2.EyeCount
             && dice1.DiceData.diceType == dice2.DiceData.diceType)
         {
-            
+            dice2 = SpawnDice();
         }
         return dice2;
     }
@@ -69,15 +69,14 @@ public class DiceManager : Singleton<DiceManager>
     /// 합칠수 있는 주사위만 보여주기
     /// </summary>
     /// <returns></returns>
-    public List<Transform> SelectDicePos()
+    public void SelectDicePos()
     {
         foreach(Transform pos in dicePos)
         {
             if(pos.GetComponent<Container>().CanCombine == false)
             {
-
             }
         }
-        return dicePos;
+        
     }
 }
