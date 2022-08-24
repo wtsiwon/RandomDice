@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class DiceRay : MonoBehaviour
 {
+
     private const float RAYDISTANCE = 10f;
     private Vector3 dir = new Vector3(0, 0, 1f);
     private Vector3 rayOriginPos = new Vector3(0, 0, -1f);
+
 
     public RaycastHit ray;
 

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: -73346293166499461}
   - component: {fileID: 8165385816959937292}
   - component: {fileID: 4597470652024274547}
+  - component: {fileID: -3646370563998212451}
   m_Layer: 5
   m_Name: Dice
   m_TagString: Untagged
@@ -54,8 +55,6 @@ MonoBehaviour:
   eyes: []
   diceData: {fileID: 11400000, guid: b240131d02dfdf74c871943acdc2e44e, type: 2}
   pos: {fileID: 0}
-  isDragging: 0
-  isDice: 0
 --- !u!114 &8165385816959937292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81,6 +80,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fd5e36a7c1ba9646b931b2252173dc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-3646370563998212451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2078788411438621896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25b210ee044dfdf4290f90b0331f4f22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDice: 0
+  isDragging: 0
 --- !u!1 &2078788411842507162
 GameObject:
   m_ObjectHideFlags: 0
