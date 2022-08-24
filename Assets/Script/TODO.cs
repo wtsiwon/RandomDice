@@ -21,5 +21,9 @@ public static class TODO
         // -    Container안에 위치정보를 같이 넣어서 추후에 활용할 수 있도록 함
     }
 
+    public static void MySuggest()
+    {
+        //RayCast관리 클래스만들어서 나누기
+    }
     static GameObject SpawnGO(string name) => new GameObject(name);
 }

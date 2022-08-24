@@ -74,19 +74,12 @@ public class Dice : MonoBehaviour
     private DiceData diceData;
 
     private DiceCombine diceCombine;
-    private const float RAYDISTANCE = 10f;
-    private Vector3 dir = new Vector3(0, 0, 1f);
-    private Vector3 rayOriginPos = new Vector3(0, 0, -1f);
-
+    
     //private const int MAXEYECOUNT = 7;
 
     public Transform pos;
 
     private int eyeCount = 1;
-    //드래그 중인가?
-    public bool isDragging;
-    //주사위 하고 부딪혔냐
-    public bool isDice;
 
     public int EyeCount
     {
@@ -110,6 +103,20 @@ public class Dice : MonoBehaviour
         set
         {
             diceData = value;
+            
+            
+        }
+    }
+    /// <summary>
+    /// DiceType에 따라 색을 바꿔주는 함수
+    /// </summary>
+    private void SetDiceColor()
+    {
+        switch (diceData.diceType)
+        {
+            case EDiceType.Fire:
+
+                break;
         }
     }
 
@@ -121,21 +128,9 @@ public class Dice : MonoBehaviour
     private void Update()
     {
         
-        RayCasts();
     }
 
-    private void RayCasts()
-    {
-        Debug.DrawRay(rayOriginPos, dir, new Color(1, 0, 0));
-        RaycastHit ray;
-        if(Physics.Raycast(rayOriginPos,dir,out ray,RAYDISTANCE))
-        {
-            if (ray.collider.CompareTag("Dice"))
-            {
-                isDice = true;
-            }
-        }
-    }
+   
     /// <summary>
     /// 공격
     /// </summary>

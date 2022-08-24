@@ -7,6 +7,7 @@ using Random = UnityEngine.Random;
 public class DiceCombine : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IDragHandler
 {
     private Dice Dice;
+    private DiceRay DiceRay;
     private RectTransform rtf;
 
 
@@ -16,6 +17,7 @@ public class DiceCombine : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     private void Start()
     {
         Dice = GetComponent<Dice>();
+        DiceRay = GetComponent<DiceRay>();
         rtf = GetComponent<RectTransform>();
     }
     private void Update()
@@ -36,9 +38,9 @@ public class DiceCombine : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     {
         if (DiceManager.Instance.currentCollidDice)
         {
-            if (Dice.isDice == true)
+            if (DiceRay.isDice == true)
             {
-                Instantiate(DiceManager.Instance.Combine(Dice, DiceManager.Instance.currentCollidDice));
+                
             }
             else
             {

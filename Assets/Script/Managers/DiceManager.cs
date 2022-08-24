@@ -54,18 +54,6 @@ public class DiceManager : Singleton<DiceManager>
     }
 
     /// <summary>
-    /// 다이스 종류 뽑아줌
-    /// </summary>
-    /// <returns></returns>
-    private EDiceType RandDiceType()
-    {
-        int rand = Random.Range(0, 5);
-
-        EDiceType dice = deck[rand].diceType;
-        return dice;
-    }
-
-    /// <summary>
     /// 주사위를 소환해주는 함수
     /// </summary>
     /// <param name="parent"></param>
@@ -74,6 +62,7 @@ public class DiceManager : Singleton<DiceManager>
         Dice dice = Instantiate(this.dice); 
         int randDice = Random.Range(0, deck.Count);
         dice.DiceData = deck[randDice];
+        
         return dice;
     }
     /// <summary>
