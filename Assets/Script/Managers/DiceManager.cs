@@ -11,7 +11,7 @@ public class DiceManager : Singleton<DiceManager>
 
     public List<int> diceUpGradeCost = new List<int>();
 
-    private Color falseActiveColor = new Color();
+    private Color falseActiveColor = new Color(0,0,0,140f);
 
     public Dice currentCollidDice;
 

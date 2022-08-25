@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using System;
 using UnityEngine.EventSystems;
 
@@ -74,6 +75,8 @@ public class Dice : MonoBehaviour
     private DiceData diceData;
 
     private DiceActivity diceActivity;
+
+    private Image img;
     
     //private const int MAXEYECOUNT = 7;
 
@@ -86,7 +89,6 @@ public class Dice : MonoBehaviour
     public bool isDragging
     {
         get => isdragging;
-
         set
         {
             isdragging = value;
@@ -115,19 +117,18 @@ public class Dice : MonoBehaviour
         set
         {
             diceData = value;
-            
-            
+
         }
     }
     /// <summary>
     /// DiceType에 따라 색을 바꿔주는 함수
     /// </summary>
-    private void SetDiceColor()
+    private void SetDiceColor(EDiceType diceType)
     {
         switch (diceData.diceType)
         {
             case EDiceType.Fire:
-
+                
                 break;
         }
     }

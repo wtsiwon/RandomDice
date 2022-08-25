@@ -21,9 +21,9 @@ public class DiceRay : MonoBehaviour
     private void Update()
     {
         Debug.DrawRay(rayOriginPos, dir, new Color(1, 0, 0));
-
         if (Physics.Raycast(rayOriginPos, dir, out ray, RAYDISTANCE))
         {
+            print(ray.collider.tag);
             RayCasts();
         }
     }

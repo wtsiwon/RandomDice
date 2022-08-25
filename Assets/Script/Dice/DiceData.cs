@@ -39,5 +39,4 @@ public class DiceData : ScriptableObject
     public Stat buffStat;
     public AttackTypeInfo atkTypeInfo;
     public EDiceType diceType;
-    
 }
