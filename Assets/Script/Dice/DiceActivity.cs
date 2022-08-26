@@ -10,6 +10,7 @@ public class DiceActivity : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
     private DiceRay DiceRay;
     private RectTransform rtf;
     private DiceManager diceManager;
+    private Container container;
 
     //현재 누르고 있는지
     public int mouseCondition;
@@ -29,6 +30,7 @@ public class DiceActivity : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
         Dice = GetComponent<Dice>();
         DiceRay = GetComponent<DiceRay>();
         rtf = GetComponent<RectTransform>();
+        container = GetComponentInParent<Container>();
     }
 
     public void OnPointerDown(PointerEventData eventData)
@@ -43,9 +45,21 @@ public class DiceActivity : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
 
     public void OnPointerUp(PointerEventData eventData)
     {
-        if (diceManager.draggingDice == null || diceManager.currentCollidDice == null) return;
-        
+        if (diceManager.currentCollidDice == null)
+        {
+            ReSetPos();
+            return;
+        }
+
+
         diceManager.Combine(diceManager.draggingDice, diceManager.currentCollidDice);
         Dice.isDragging = false;
+    }
+    /// <summary>
+    /// 땟을 때 합치지 못한다면 다시 원래 위치로
+    /// </summary>
+    private void ReSetPos()
+    {
+        transform.SetParent(container.transform);
     }
 }

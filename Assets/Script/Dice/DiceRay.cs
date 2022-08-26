@@ -40,9 +40,7 @@ public class DiceRay : MonoBehaviour
                 RayCollidDetect();
             }
         }
-        print(ray.point);
     }
-
     /// <summary>
     /// 래이 충돌감지
     /// </summary>

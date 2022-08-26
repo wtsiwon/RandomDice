@@ -740,11 +740,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!224 &272968120 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 2078788411438621899, guid: 7560d9a0b9e23ef4885d0691acba589a, type: 3}
-  m_PrefabInstance: {fileID: 1405437094}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &342984946
 GameObject:
   m_ObjectHideFlags: 0
@@ -1557,8 +1552,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 272968120}
+  m_Children: []
   m_Father: {fileID: 1762946229}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1593,103 +1587,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 110, y: 110}
   m_EdgeRadius: 0
---- !u!1001 &1405437094
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1355519955}
-    m_Modifications:
-    - target: {fileID: 2078788411438621896, guid: 7560d9a0b9e23ef4885d0691acba589a, type: 3}
-      propertyPath: m_Name
-      value: Dice
-      objectReference: {fileID: 0}
-    - target: {fileID: 2078788411438621899, guid: 7560d9a0b9e23ef4885d0691acba589a, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2078788411438621899, guid: 7560d9a0b9e23ef4885d0691acba589a, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2078788411438621899, guid: 7560d9a0b9e23ef4885d0691acba589a, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2078788411438621899, guid: 7560d9a0b9e23ef4885d0691acba589a, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2078788411438621899, guid: 7560d9a0b9e23ef4885d0691acba589a, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2078788411438621899, guid: 7560d9a0b9e23ef4885d0691acba589a, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2078788411438621899, guid: 7560d9a0b9e23ef4885d0691acba589a, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2078788411438621899, guid: 7560d9a0b9e23ef4885d0691acba589a, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 2078788411438621899, guid: 7560d9a0b9e23ef4885d0691acba589a, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 2078788411438621899, guid: 7560d9a0b9e23ef4885d0691acba589a, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2078788411438621899, guid: 7560d9a0b9e23ef4885d0691acba589a, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2078788411438621899, guid: 7560d9a0b9e23ef4885d0691acba589a, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2078788411438621899, guid: 7560d9a0b9e23ef4885d0691acba589a, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2078788411438621899, guid: 7560d9a0b9e23ef4885d0691acba589a, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2078788411438621899, guid: 7560d9a0b9e23ef4885d0691acba589a, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2078788411438621899, guid: 7560d9a0b9e23ef4885d0691acba589a, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2078788411438621899, guid: 7560d9a0b9e23ef4885d0691acba589a, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2078788411438621899, guid: 7560d9a0b9e23ef4885d0691acba589a, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2078788411438621899, guid: 7560d9a0b9e23ef4885d0691acba589a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2078788411438621899, guid: 7560d9a0b9e23ef4885d0691acba589a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2078788411438621899, guid: 7560d9a0b9e23ef4885d0691acba589a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7560d9a0b9e23ef4885d0691acba589a, type: 3}
 --- !u!1 &1545340527
 GameObject:
   m_ObjectHideFlags: 0
@@ -2291,8 +2188,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d13148ef77afa094ebe29f67f0be8067, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deck: []
-  dicePos: []
+  deck:
+  - {fileID: 11400000, guid: bf776988cae09944b96a2c43b448e324, type: 2}
+  - {fileID: 11400000, guid: b240131d02dfdf74c871943acdc2e44e, type: 2}
+  - {fileID: 11400000, guid: acb14b030c1088e4591ba0bfb896bdb1, type: 2}
+  - {fileID: 11400000, guid: d773e18fce04b6546acb4a03d08de0d6, type: 2}
+  dicePos:
+  - {fileID: 1355519954}
+  - {fileID: 742187390}
+  - {fileID: 158643365}
+  - {fileID: 28120067}
+  - {fileID: 471142094}
+  - {fileID: 1948982983}
+  - {fileID: 2011902451}
+  - {fileID: 1213652321}
+  - {fileID: 357971269}
+  - {fileID: 2055695325}
+  - {fileID: 1725508401}
+  - {fileID: 464046127}
+  - {fileID: 1935478366}
+  - {fileID: 115595983}
+  - {fileID: 1059915241}
   diceUpGradeCost: 
   currentCollidDice: {fileID: 0}
   draggingDice: {fileID: 0}

@@ -75,6 +75,7 @@ public class Dice : MonoBehaviour
     private DiceData diceData;
 
     private DiceActivity diceActivity;
+    
 
     private Image img;
     
@@ -143,7 +144,6 @@ public class Dice : MonoBehaviour
         
     }
 
-   
     /// <summary>
     /// АјАн
     /// </summary>
