@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Container : MonoBehaviour
 {
+    public int index;
     private bool isFull => dice != null;
 
     /// <summary>

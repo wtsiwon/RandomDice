@@ -12,28 +12,41 @@ public class DiceRay : MonoBehaviour
 
     public RaycastHit ray;
 
+    private RectTransform rt;
+    private Dice Dice;
 
     private void Start()
     {
+        rt = GetComponent<RectTransform>();
+        Dice = GetComponent<Dice>();
+
         diceManagerIns = DiceManager.Instance;
     }
 
     private void Update()
     {
-        Debug.DrawRay(rayOriginPos, dir, new Color(1, 0, 0));
-        if (Physics.Raycast(rayOriginPos, dir, out ray, RAYDISTANCE))
+        DrawRay();
+    }
+    /// <summary>
+    /// 래이 그려주는 함수
+    /// </summary>
+    private void DrawRay()
+    {
+        if (Dice.isDragging == true)
         {
-            print(ray.collider.tag);
-            RayCasts();
+            Debug.DrawRay(rt.position, dir, new Color(0, 2, 0));
+            if (Physics.Raycast(rayOriginPos, dir, out ray, RAYDISTANCE))
+            {
+                RayCollidDetect();
+            }
         }
+        print(ray.point);
     }
 
     /// <summary>
-    /// 레이저에 닿은 컨테이너에 Dice가 있다면 
-    /// diceManagerIns.currentCollidDice에 컨테이너에 있는 주사위를 저장한다
-    /// 아니면 null
+    /// 래이 충돌감지
     /// </summary>
-    private void RayCasts()
+    private void RayCollidDetect()
     {
         var con = ray.collider.GetComponent<Container>();
         if (ray.collider.CompareTag("Container") && con.dice != null)

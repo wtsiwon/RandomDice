@@ -7,11 +7,14 @@ public class DiceManager : Singleton<DiceManager>
 {
     public List<DiceData> deck = new List<DiceData>();
 
-    public List<Transform> dicePos = new List<Transform>();
+    public List<GameObject> dicePos = new List<GameObject>();
 
-    public List<int> diceUpGradeCost = new List<int>();
+    public List<int> diceUpGradeCost = new List<int>()
+    {
+        100,200,400,700
+    };
 
-    private Color falseActiveColor = new Color(0,0,0,140f);
+    private Color falseActiveColor = new Color();
 
     public Dice currentCollidDice;
 
@@ -71,12 +74,12 @@ public class DiceManager : Singleton<DiceManager>
     /// <returns></returns>
     public void SelectDicePos()
     {
-        foreach(Transform pos in dicePos)
+        foreach(GameObject pos in dicePos)
         {
             if(pos.GetComponent<Container>().CanCombine == false)
             {
+                pos.GetComponent<Image>().color = Color.grey;
             }
         }
-        
     }
 }

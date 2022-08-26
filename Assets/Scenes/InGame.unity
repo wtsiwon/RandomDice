@@ -2295,6 +2295,8 @@ MonoBehaviour:
   dicePos: []
   diceUpGradeCost: 
   currentCollidDice: {fileID: 0}
+  draggingDice: {fileID: 0}
+  dice: {fileID: 0}
   diceSpawnBtn: {fileID: 0}
 --- !u!1 &2011902451
 GameObject:
