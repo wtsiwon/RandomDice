@@ -49,17 +49,21 @@ public class DiceManager : Singleton<DiceManager>
     /// <param name="dice1">지금 들고 있는</param>
     /// <param name="dice2">합치려고하는</param>
     /// <returns></returns>
-    public Dice Combine(Dice dice1, Dice dice2)
+    public void DiceCombine(Dice dice1, Dice dice2)
     {
-        if (dice1 == null || dice2 == null) return null;
+        if (dice1 == null || dice2 == null)
+        {
+            return;
+        }
 
         if (dice1.EyeCount == dice2.EyeCount
             && dice1.DiceData.diceType == dice2.DiceData.diceType)
         {
             dice2 = RandomDiceSelect(dice2);
         }
-        return dice2;
     }
+
+
     /// <summary>
     /// 랜덤 주사위 선택
     /// </summary>

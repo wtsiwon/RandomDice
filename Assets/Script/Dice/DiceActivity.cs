@@ -52,7 +52,6 @@ public class DiceActivity : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
             return;
         }
 
-        diceManager.Combine(diceManager.draggingDice, diceManager.currentCollidDice);
         Dice.isDragging = false;
     }
 
