@@ -36,6 +36,7 @@ public class DiceActivity : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
     public void OnPointerDown(PointerEventData eventData)
     {
         Dice.isDragging = true;
+        DiceManager.Instance.SelectCanCombineDice();
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -51,10 +52,10 @@ public class DiceActivity : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
             return;
         }
 
-
         diceManager.Combine(diceManager.draggingDice, diceManager.currentCollidDice);
         Dice.isDragging = false;
     }
+
     /// <summary>
     /// 땟을 때 합치지 못한다면 다시 원래 위치로
     /// </summary>

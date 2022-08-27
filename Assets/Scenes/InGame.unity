@@ -133,6 +133,9 @@ GameObject:
   m_Component:
   - component: {fileID: 28120068}
   - component: {fileID: 28120069}
+  - component: {fileID: 28120070}
+  - component: {fileID: 28120072}
+  - component: {fileID: 28120071}
   m_Layer: 5
   m_Name: Pos (3)
   m_TagString: Untagged
@@ -185,6 +188,58 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 110, y: 110}
   m_EdgeRadius: 0
+--- !u!114 &28120070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28120067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e9896236563cca419656b94943e2920, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
+  dice: {fileID: 0}
+--- !u!114 &28120071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28120067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &28120072
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28120067}
+  m_CullTransparentMesh: 1
 --- !u!1 &82408493
 GameObject:
   m_ObjectHideFlags: 0
@@ -544,6 +599,9 @@ GameObject:
   m_Component:
   - component: {fileID: 115595984}
   - component: {fileID: 115595985}
+  - component: {fileID: 115595986}
+  - component: {fileID: 115595988}
+  - component: {fileID: 115595987}
   m_Layer: 5
   m_Name: Pos (13)
   m_TagString: Untagged
@@ -596,6 +654,58 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 110, y: 110}
   m_EdgeRadius: 0
+--- !u!114 &115595986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115595983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e9896236563cca419656b94943e2920, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
+  dice: {fileID: 0}
+--- !u!114 &115595987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115595983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &115595988
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115595983}
+  m_CullTransparentMesh: 1
 --- !u!1 &158643365
 GameObject:
   m_ObjectHideFlags: 0
@@ -606,6 +716,9 @@ GameObject:
   m_Component:
   - component: {fileID: 158643366}
   - component: {fileID: 158643367}
+  - component: {fileID: 158643368}
+  - component: {fileID: 158643370}
+  - component: {fileID: 158643369}
   m_Layer: 5
   m_Name: Pos (2)
   m_TagString: Untagged
@@ -658,6 +771,58 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 110, y: 110}
   m_EdgeRadius: 0
+--- !u!114 &158643368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158643365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e9896236563cca419656b94943e2920, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
+  dice: {fileID: 0}
+--- !u!114 &158643369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158643365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &158643370
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158643365}
+  m_CullTransparentMesh: 1
 --- !u!1 &201669346
 GameObject:
   m_ObjectHideFlags: 0
@@ -871,6 +1036,9 @@ GameObject:
   m_Component:
   - component: {fileID: 357971270}
   - component: {fileID: 357971271}
+  - component: {fileID: 357971272}
+  - component: {fileID: 357971274}
+  - component: {fileID: 357971273}
   m_Layer: 5
   m_Name: Pos (8)
   m_TagString: Untagged
@@ -923,6 +1091,58 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 110, y: 110}
   m_EdgeRadius: 0
+--- !u!114 &357971272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 357971269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e9896236563cca419656b94943e2920, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
+  dice: {fileID: 0}
+--- !u!114 &357971273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 357971269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &357971274
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 357971269}
+  m_CullTransparentMesh: 1
 --- !u!1 &464046127
 GameObject:
   m_ObjectHideFlags: 0
@@ -933,6 +1153,9 @@ GameObject:
   m_Component:
   - component: {fileID: 464046128}
   - component: {fileID: 464046129}
+  - component: {fileID: 464046130}
+  - component: {fileID: 464046132}
+  - component: {fileID: 464046131}
   m_Layer: 5
   m_Name: Pos (11)
   m_TagString: Untagged
@@ -985,6 +1208,58 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 110, y: 110}
   m_EdgeRadius: 0
+--- !u!114 &464046130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464046127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e9896236563cca419656b94943e2920, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
+  dice: {fileID: 0}
+--- !u!114 &464046131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464046127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &464046132
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464046127}
+  m_CullTransparentMesh: 1
 --- !u!1 &471142094
 GameObject:
   m_ObjectHideFlags: 0
@@ -995,6 +1270,9 @@ GameObject:
   m_Component:
   - component: {fileID: 471142095}
   - component: {fileID: 471142096}
+  - component: {fileID: 471142097}
+  - component: {fileID: 471142099}
+  - component: {fileID: 471142098}
   m_Layer: 5
   m_Name: Pos (4)
   m_TagString: Untagged
@@ -1047,6 +1325,58 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 110, y: 110}
   m_EdgeRadius: 0
+--- !u!114 &471142097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471142094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e9896236563cca419656b94943e2920, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
+  dice: {fileID: 0}
+--- !u!114 &471142098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471142094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &471142099
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471142094}
+  m_CullTransparentMesh: 1
 --- !u!1 &653463865
 GameObject:
   m_ObjectHideFlags: 0
@@ -1215,6 +1545,9 @@ GameObject:
   m_Component:
   - component: {fileID: 742187391}
   - component: {fileID: 742187392}
+  - component: {fileID: 742187393}
+  - component: {fileID: 742187395}
+  - component: {fileID: 742187394}
   m_Layer: 5
   m_Name: Pos (1)
   m_TagString: Untagged
@@ -1267,6 +1600,58 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 110, y: 110}
   m_EdgeRadius: 0
+--- !u!114 &742187393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 742187390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e9896236563cca419656b94943e2920, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
+  dice: {fileID: 0}
+--- !u!114 &742187394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 742187390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &742187395
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 742187390}
+  m_CullTransparentMesh: 1
 --- !u!1 &1059915241
 GameObject:
   m_ObjectHideFlags: 0
@@ -1277,6 +1662,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1059915242}
   - component: {fileID: 1059915243}
+  - component: {fileID: 1059915244}
+  - component: {fileID: 1059915246}
+  - component: {fileID: 1059915245}
   m_Layer: 5
   m_Name: Pos (14)
   m_TagString: Untagged
@@ -1329,6 +1717,58 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 110, y: 110}
   m_EdgeRadius: 0
+--- !u!114 &1059915244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1059915241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e9896236563cca419656b94943e2920, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
+  dice: {fileID: 0}
+--- !u!114 &1059915245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1059915241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1059915246
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1059915241}
+  m_CullTransparentMesh: 1
 --- !u!1 &1201036411
 GameObject:
   m_ObjectHideFlags: 0
@@ -1473,6 +1913,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1213652322}
   - component: {fileID: 1213652323}
+  - component: {fileID: 1213652324}
+  - component: {fileID: 1213652326}
+  - component: {fileID: 1213652325}
   m_Layer: 5
   m_Name: Pos (7)
   m_TagString: Untagged
@@ -1525,6 +1968,58 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 110, y: 110}
   m_EdgeRadius: 0
+--- !u!114 &1213652324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1213652321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e9896236563cca419656b94943e2920, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
+  dice: {fileID: 0}
+--- !u!114 &1213652325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1213652321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1213652326
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1213652321}
+  m_CullTransparentMesh: 1
 --- !u!1 &1355519954
 GameObject:
   m_ObjectHideFlags: 0
@@ -1535,6 +2030,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1355519955}
   - component: {fileID: 1355519956}
+  - component: {fileID: 1355519957}
+  - component: {fileID: 1355519959}
+  - component: {fileID: 1355519958}
   m_Layer: 5
   m_Name: Pos
   m_TagString: Untagged
@@ -1587,6 +2085,58 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 110, y: 110}
   m_EdgeRadius: 0
+--- !u!114 &1355519957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1355519954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e9896236563cca419656b94943e2920, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
+  dice: {fileID: 0}
+--- !u!114 &1355519958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1355519954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1355519959
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1355519954}
+  m_CullTransparentMesh: 1
 --- !u!1 &1545340527
 GameObject:
   m_ObjectHideFlags: 0
@@ -1853,6 +2403,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1725508402}
   - component: {fileID: 1725508403}
+  - component: {fileID: 1725508404}
+  - component: {fileID: 1725508406}
+  - component: {fileID: 1725508405}
   m_Layer: 5
   m_Name: Pos (10)
   m_TagString: Untagged
@@ -1905,6 +2458,58 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 110, y: 110}
   m_EdgeRadius: 0
+--- !u!114 &1725508404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725508401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e9896236563cca419656b94943e2920, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
+  dice: {fileID: 0}
+--- !u!114 &1725508405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725508401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1725508406
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725508401}
+  m_CullTransparentMesh: 1
 --- !u!1 &1762946228
 GameObject:
   m_ObjectHideFlags: 0
@@ -2031,6 +2636,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1935478367}
   - component: {fileID: 1935478368}
+  - component: {fileID: 1935478369}
+  - component: {fileID: 1935478371}
+  - component: {fileID: 1935478370}
   m_Layer: 5
   m_Name: Pos (12)
   m_TagString: Untagged
@@ -2083,6 +2691,58 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 110, y: 110}
   m_EdgeRadius: 0
+--- !u!114 &1935478369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1935478366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e9896236563cca419656b94943e2920, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
+  dice: {fileID: 0}
+--- !u!114 &1935478370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1935478366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1935478371
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1935478366}
+  m_CullTransparentMesh: 1
 --- !u!1 &1948982983
 GameObject:
   m_ObjectHideFlags: 0
@@ -2093,6 +2753,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1948982984}
   - component: {fileID: 1948982985}
+  - component: {fileID: 1948982986}
+  - component: {fileID: 1948982988}
+  - component: {fileID: 1948982987}
   m_Layer: 5
   m_Name: Pos (5)
   m_TagString: Untagged
@@ -2145,6 +2808,58 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 110, y: 110}
   m_EdgeRadius: 0
+--- !u!114 &1948982986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1948982983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e9896236563cca419656b94943e2920, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
+  dice: {fileID: 0}
+--- !u!114 &1948982987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1948982983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1948982988
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1948982983}
+  m_CullTransparentMesh: 1
 --- !u!1 &1982891081
 GameObject:
   m_ObjectHideFlags: 0
@@ -2209,11 +2924,13 @@ MonoBehaviour:
   - {fileID: 1935478366}
   - {fileID: 115595983}
   - {fileID: 1059915241}
+  selectDicePos: []
   diceUpGradeCost: 
   currentCollidDice: {fileID: 0}
   draggingDice: {fileID: 0}
-  dice: {fileID: 0}
-  diceSpawnBtn: {fileID: 0}
+  dice: {fileID: -73346293166499461, guid: 7560d9a0b9e23ef4885d0691acba589a, type: 3}
+  diceSpawnBtn: {fileID: 342984948}
+  canvas: {fileID: 82408496}
 --- !u!1 &2011902451
 GameObject:
   m_ObjectHideFlags: 0
@@ -2224,6 +2941,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2011902452}
   - component: {fileID: 2011902453}
+  - component: {fileID: 2011902454}
+  - component: {fileID: 2011902456}
+  - component: {fileID: 2011902455}
   m_Layer: 5
   m_Name: Pos (6)
   m_TagString: Untagged
@@ -2276,6 +2996,58 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 110, y: 110}
   m_EdgeRadius: 0
+--- !u!114 &2011902454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2011902451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e9896236563cca419656b94943e2920, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
+  dice: {fileID: 0}
+--- !u!114 &2011902455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2011902451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2011902456
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2011902451}
+  m_CullTransparentMesh: 1
 --- !u!1 &2055695325
 GameObject:
   m_ObjectHideFlags: 0
@@ -2286,6 +3058,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2055695326}
   - component: {fileID: 2055695327}
+  - component: {fileID: 2055695328}
+  - component: {fileID: 2055695330}
+  - component: {fileID: 2055695329}
   m_Layer: 5
   m_Name: Pos (9)
   m_TagString: Untagged
@@ -2338,3 +3113,55 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 110, y: 110}
   m_EdgeRadius: 0
+--- !u!114 &2055695328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055695325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e9896236563cca419656b94943e2920, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
+  dice: {fileID: 0}
+--- !u!114 &2055695329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055695325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2055695330
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055695325}
+  m_CullTransparentMesh: 1

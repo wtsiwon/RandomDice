@@ -9,6 +9,8 @@ public class DiceManager : Singleton<DiceManager>
 
     public List<GameObject> dicePos = new List<GameObject>();
 
+    public List<GameObject> selectDicePos = new List<GameObject>();
+
     public List<int> diceUpGradeCost = new List<int>()
     {
         100,200,400,700
@@ -21,6 +23,7 @@ public class DiceManager : Singleton<DiceManager>
     //현재 들고 있는 다이스
     public Dice draggingDice;
 
+    //기본 다이스
     public Dice dice;
 
     public bool IsDraggingDice
@@ -30,12 +33,14 @@ public class DiceManager : Singleton<DiceManager>
 
     public Button diceSpawnBtn;
 
+    public Canvas canvas;
+
     private void Start()
     {
-        //diceSpawnBtn.onClick.AddListener(() =>
-        //{
-        //    SpawnDice();
-        //});
+        diceSpawnBtn.onClick.AddListener(() =>
+        {
+            SpawnDice();
+        });
     }
 
     /// <summary>
@@ -51,34 +56,59 @@ public class DiceManager : Singleton<DiceManager>
         if (dice1.EyeCount == dice2.EyeCount
             && dice1.DiceData.diceType == dice2.DiceData.diceType)
         {
-            dice2 = SpawnDice();
+            dice2 = RandomDiceSelect(dice2);
         }
         return dice2;
+    }
+    /// <summary>
+    /// 랜덤 주사위 선택
+    /// </summary>
+    /// <returns></returns>
+    private Dice RandomDiceSelect(Dice dice)
+    {
+        //Dice dice = Instantiate(this.dice,pos.transform);
+        //int randDice = Random.Range(0, deck.Count);
+        //dice.DiceData = deck[randDice];
+        int randDice = Random.Range(0, deck.Count);
+
+        dice.DiceData = deck[randDice];
+        return dice;
     }
 
     /// <summary>
     /// 주사위를 소환해주는 함수
     /// </summary>
     /// <param name="parent"></param>
-    public Dice SpawnDice()
+    public void SpawnDice()
     {
-        Dice dice = Instantiate(this.dice); 
+        SelectCanCombineDice();
+
         int randDice = Random.Range(0, deck.Count);
+        int randPos = Random.Range(0, selectDicePos.Count);
+
+        Dice dice = Instantiate(this.dice);
         dice.DiceData = deck[randDice];
-        
-        return dice;
+
+        Instantiate(dice, selectDicePos[randPos].transform);
     }
+
+
     /// <summary>
     /// 합칠수 있는 주사위만 보여주기
     /// </summary>
     /// <returns></returns>
-    public void SelectDicePos()
+    public void SelectCanCombineDice()
     {
-        foreach(GameObject pos in dicePos)
+        foreach (GameObject pos in dicePos)
         {
-            if(pos.GetComponent<Container>().CanCombine == false)
+            if (pos.GetComponent<Container>().CanCombine == false)
             {
-                pos.GetComponent<Image>().color = Color.grey;
+                if (IsDraggingDice == true)
+                {
+                    pos.GetComponent<Image>().color = falseActiveColor;
+                }
+
+                selectDicePos.Add(pos);
             }
         }
     }
