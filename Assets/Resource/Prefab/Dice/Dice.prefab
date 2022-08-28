@@ -9,10 +9,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2078788411438621899}
+  - component: {fileID: -8249220617191755109}
   - component: {fileID: -73346293166499461}
   - component: {fileID: 8165385816959937292}
   - component: {fileID: 4597470652024274547}
   - component: {fileID: -3646370563998212451}
+  - component: {fileID: 5641366375380394234}
   m_Layer: 5
   m_Name: Dice
   m_TagString: Untagged
@@ -40,6 +42,36 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &-8249220617191755109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2078788411438621896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!114 &-73346293166499461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92,8 +124,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25b210ee044dfdf4290f90b0331f4f22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDice: 0
-  isDragging: 0
+--- !u!222 &5641366375380394234
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2078788411438621896}
+  m_CullTransparentMesh: 1
 --- !u!1 &2078788411842507162
 GameObject:
   m_ObjectHideFlags: 0

@@ -70,9 +70,6 @@ public class DiceManager : Singleton<DiceManager>
     /// <returns></returns>
     private Dice RandomDiceSelect(Dice dice)
     {
-        //Dice dice = Instantiate(this.dice,pos.transform);
-        //int randDice = Random.Range(0, deck.Count);
-        //dice.DiceData = deck[randDice];
         int randDice = Random.Range(0, deck.Count);
 
         dice.DiceData = deck[randDice];

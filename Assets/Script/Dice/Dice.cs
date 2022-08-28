@@ -118,7 +118,8 @@ public class Dice : MonoBehaviour
         set
         {
             diceData = value;
-
+            print(diceData.diceType);
+            SetDiceColor(diceData.diceType);
         }
     }
     /// <summary>
@@ -126,10 +127,22 @@ public class Dice : MonoBehaviour
     /// </summary>
     private void SetDiceColor(EDiceType diceType)
     {
-        switch (diceData.diceType)
+        switch (diceType)
         {
             case EDiceType.Fire:
-                
+                img.color = Color.red;
+                break;
+            case EDiceType.Ice:
+                img.color = Color.blue;
+                break;
+            case EDiceType.Electro:
+                img.color = Color.yellow;
+                break;
+            case EDiceType.Wind:
+                img.color = Color.cyan;
+                break;
+            case EDiceType.Rand:
+                img.color = Color.magenta;
                 break;
         }
     }
@@ -137,6 +150,7 @@ public class Dice : MonoBehaviour
     private void Start()
     {
         diceActivity = GetComponent<DiceActivity>();
+        img = GetComponent<Image>();
     }
 
     private void Update()
