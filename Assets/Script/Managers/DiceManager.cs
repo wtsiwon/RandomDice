@@ -87,7 +87,7 @@ public class DiceManager : Singleton<DiceManager>
         int randDice = Random.Range(0, deck.Count);
         int randPos = Random.Range(0, selectDicePos.Count);
 
-        Dice dice = Instantiate(this.dice);
+        Dice dice = this.dice;
         dice.DiceData = deck[randDice];
 
         Instantiate(dice, selectDicePos[randPos].transform);
@@ -108,8 +108,12 @@ public class DiceManager : Singleton<DiceManager>
                 {
                     pos.GetComponent<Image>().color = falseActiveColor;
                 }
-
+                
                 selectDicePos.Add(pos);
+            }
+            else
+            {
+                selectDicePos.Remove(pos);
             }
         }
     }

@@ -119,7 +119,7 @@ public class Dice : MonoBehaviour
         {
             diceData = value;
             print(diceData.diceType);
-            SetDiceColor(diceData.diceType);
+            //SetDiceColor(diceData.diceType);
         }
     }
     /// <summary>
