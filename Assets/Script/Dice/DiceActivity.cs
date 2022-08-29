@@ -30,8 +30,13 @@ public class DiceActivity : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
         Dice = GetComponent<Dice>();
         DiceRay = GetComponent<DiceRay>();
         rtf = GetComponent<RectTransform>();
+
         container = GetComponentInParent<Container>();
+
+        container.Dice = Dice;
     }
+
+
 
     public void OnPointerDown(PointerEventData eventData)
     {
@@ -54,6 +59,8 @@ public class DiceActivity : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
 
         Dice.isDragging = false;
     }
+
+
 
     /// <summary>
     /// 땟을 때 합치지 못한다면 다시 원래 위치로

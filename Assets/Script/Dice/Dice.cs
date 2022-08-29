@@ -65,7 +65,6 @@ public struct Stat
 
 }
 
-
 public class Dice : MonoBehaviour
 {
 
@@ -151,6 +150,7 @@ public class Dice : MonoBehaviour
     {
         diceActivity = GetComponent<DiceActivity>();
         img = GetComponent<Image>();
+        
     }
 
     private void Update()

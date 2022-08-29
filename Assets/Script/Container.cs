@@ -13,13 +13,24 @@ public class Container : MonoBehaviour
     public bool CanCombine => isFull && DiceManager.Instance.IsDraggingDice && 
     DiceManager.Instance.draggingDice.DiceData.diceType == dice.DiceData.diceType &&
     DiceManager.Instance.draggingDice.EyeCount == dice.EyeCount;
-    
+
 
     //컨테이너에 있는 Dice정보
-    public Dice dice;
+    private Dice dice;
+    public Dice Dice
+    {
+        get
+        {
+            return dice;
+        }
+        set
+        {
+            dice = value;
+        }
+    }
 
     private void Start()
     {
-        dice = GetComponentInChildren<Dice>();
+
     }
 }

@@ -27,6 +27,7 @@ public class DiceRay : MonoBehaviour
     {
         DrawRay();
     }
+
     /// <summary>
     /// 래이 그려주는 함수
     /// </summary>
@@ -41,15 +42,16 @@ public class DiceRay : MonoBehaviour
             }
         }
     }
+
     /// <summary>
     /// 래이 충돌감지
     /// </summary>
     private void RayCollidDetect()
     {
         var con = ray.collider.GetComponent<Container>();
-        if (ray.collider.CompareTag("Container") && con.dice != null)
+        if (ray.collider.CompareTag("Container") && con.Dice != null)
         {
-            diceManagerIns.currentCollidDice = con.dice;
+            diceManagerIns.currentCollidDice = con.Dice;
         }
         else
         {

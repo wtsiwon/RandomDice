@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
+using Random = UnityEngine.Random;
 
 public class DiceManager : Singleton<DiceManager>
 {
@@ -16,12 +18,16 @@ public class DiceManager : Singleton<DiceManager>
         100,200,400,700
     };
 
-    private Color falseActiveColor = new Color();
+    //비활성화일때 색
+    private Color falseActiveColor;
 
     public Dice currentCollidDice;
 
     //현재 들고 있는 다이스
     public Dice draggingDice;
+
+    //
+    public Action diceCheck;
 
     //기본 다이스
     public Dice dice;
@@ -37,6 +43,8 @@ public class DiceManager : Singleton<DiceManager>
 
     private void Start()
     {
+        falseActiveColor = new Color(0,0,0,140f);
+
         diceSpawnBtn.onClick.AddListener(() =>
         {
             SpawnDice();
@@ -49,11 +57,11 @@ public class DiceManager : Singleton<DiceManager>
     /// <param name="dice1">지금 들고 있는</param>
     /// <param name="dice2">합치려고하는</param>
     /// <returns></returns>
-    public void DiceCombine(Dice dice1, Dice dice2)
+    public Dice DiceCombine(Dice dice1, Dice dice2)
     {
         if (dice1 == null || dice2 == null)
         {
-            return;
+            return null;
         }
 
         if (dice1.EyeCount == dice2.EyeCount
@@ -61,6 +69,7 @@ public class DiceManager : Singleton<DiceManager>
         {
             dice2 = RandomDiceSelect(dice2);
         }
+        return dice2;
     }
 
 
@@ -82,8 +91,6 @@ public class DiceManager : Singleton<DiceManager>
     /// <param name="parent"></param>
     public void SpawnDice()
     {
-        SelectCanCombineDice();
-
         int randDice = Random.Range(0, deck.Count);
         int randPos = Random.Range(0, selectDicePos.Count);
 
@@ -92,7 +99,6 @@ public class DiceManager : Singleton<DiceManager>
 
         Instantiate(dice, selectDicePos[randPos].transform);
     }
-
 
     /// <summary>
     /// 합칠수 있는 주사위만 보여주기
@@ -116,5 +122,13 @@ public class DiceManager : Singleton<DiceManager>
                 selectDicePos.Remove(pos);
             }
         }
+    }
+
+    /// <summary>
+    /// 그 위치에 주사위가 있나
+    /// </summary>
+    public void CheckSpawnPos()
+    {
+
     }
 }
